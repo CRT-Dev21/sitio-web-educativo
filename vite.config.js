@@ -1,17 +1,8 @@
 // vite.config.js
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/postcss";
-import autoprefixer from "autoprefixer";
 
 export default defineConfig({
   plugins: [react()],
-  css: {
-    postcss: {
-      plugins: [
-        tailwindcss(), // Usa el plugin de Tailwind
-        autoprefixer(), // Usa Autoprefixer
-      ],
-    },
-  },
+  base: "/sitio-web-educativo/", // Ajusta esto según el nombre de tu repositorio
 });
